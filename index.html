@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Result Portal</title>
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="title">Student Result Portal</h1>
+      <!-- Login form -->
+      <div id="login-form">
+        <p class="subtitle">Log in with your registration number and password to view your results.</p>
+        <label for="username">Registration Number</label>
+        <input type="text" id="username" placeholder="Enter registration number" autocomplete="off">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" autocomplete="off">
+
+        <button id="login-btn" class="btn">Login</button>
+        <p id="error-msg" class="error-msg"></p>
+      </div>
+      <!-- Result view -->
+      <div id="result-view" style="display: none;">
+        <h2>Your Result</h2>
+        <p><strong>Name:</strong> <span id="student-name"></span></p>
+        <p><strong>Registration No.:</strong> <span id="student-reg"></span></p>
+        <p><strong>Program:</strong> <span id="student-program"></span></p>
+        <p><strong>GPA:</strong> <span id="student-gpa"></span></p>
+        <p><strong>Class Award:</strong> <span id="student-class"></span></p>
+        <button id="logout-btn" class="btn secondary">Logout</button>
+      </div>
+    </div>
+  </div>
+  <!-- External script -->
+  <script src="script.js"></script>
+</body>
+</html>

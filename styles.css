@@ -1,0 +1,155 @@
+/*
+ * Basic styling for the student result portal.
+ * The layout uses flexbox to center the card on the screen and ensures
+ * responsiveness across various screen sizes.
+ */
+
+/*
+ * Modern, sleek styling for the student result portal.
+ * The design uses a vibrant gradient background and frosted-glass style card
+ * for a more contemporary feel. Components scale gracefully on small devices.
+ */
+
+/* Root color variables allow quick palette tweaks */
+:root {
+  --primary: #4e54c8;
+  --secondary: #8f94fb;
+  --accent: #6a11cb;
+  --accent-secondary: #2575fc;
+  --background: linear-gradient(135deg, var(--primary), var(--secondary));
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-shadow: rgba(0, 0, 0, 0.15);
+  --input-bg: #f5f7fa;
+  --text-color: #333333;
+  --error-color: #d32f2f;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px var(--card-shadow);
+  max-width: 460px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* Introductory subtitle below the main title */
+.subtitle {
+  text-align: center;
+  font-size: 15px;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--input-bg);
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--secondary);
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: linear-gradient(90deg, var(--accent), var(--accent-secondary));
+  color: #ffffff;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn.secondary {
+  background: #f0f0f0;
+  color: var(--text-color);
+}
+
+.btn.secondary:hover {
+  transform: none;
+  box-shadow: none;
+  background: #e0e0e0;
+}
+
+.error-msg {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--error-color);
+  font-size: 14px;
+}
+
+#result-view p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 30px;
+    max-width: 90%;
+  }
+  .title {
+    font-size: 24px;
+  }
+  input[type="text"],
+  input[type="password"] {
+    font-size: 14px;
+  }
+  .btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
