@@ -1,4 +1,16 @@
-/* Root color */
+/*
+ * Basic styling for the student result portal.
+ * The layout uses flexbox to center the card on the screen and ensures
+ * responsiveness across various screen sizes.
+ */
+
+/*
+ * Modern, sleek styling for the student result portal.
+ * The design uses a vibrant gradient background and frosted-glass style card
+ * for a more contemporary feel. Components scale gracefully on small devices.
+ */
+
+/* Root color variables allow quick palette tweaks */
 :root {
   --primary: #4e54c8;
   --secondary: #8f94fb;
@@ -140,4 +152,23 @@ input[type="password"]:focus {
     font-size: 15px;
     padding: 10px;
   }
+}
+
+/* Full results table styling */
+#full-results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+#full-results-table th,
+#full-results-table td {
+  padding: 8px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 14px;
+  color: var(--text-color);
+}
+#full-results-table th {
+  background-color: var(--primary);
+  color: #ffffff;
 }

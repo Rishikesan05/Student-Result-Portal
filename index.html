@@ -31,7 +31,24 @@
         <p><strong>Program:</strong> <span id="student-program"></span></p>
         <p><strong>GPA:</strong> <span id="student-gpa"></span></p>
         <p><strong>Class Award:</strong> <span id="student-class"></span></p>
-        <button id="logout-btn" class="btn secondary">Logout</button>
+        <!-- Button to toggle full results -->
+        <button id="view-full-btn" class="btn">View Full Results</button>
+        <!-- Container for full subject results -->
+        <div id="full-results" style="display: none; margin-top: 20px;">
+          <h3>Full Results</h3>
+          <table id="full-results-table">
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Rows will be injected by script.js -->
+            </tbody>
+          </table>
+        </div>
+        <button id="logout-btn" class="btn secondary" style="margin-top: 20px;">Logout</button>
       </div>
     </div>
   </div>
