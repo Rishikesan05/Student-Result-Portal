@@ -1,12 +1,4 @@
-/*
- * Script to handle the login and result display for the student portal.
- *
- * This file assumes a global `users` object is defined in users.js.
- * The `users` object maps registration numbers to user records
- * containing a password, name, program, GPA, and class award.
- */
-
- document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
    const usernameInput = document.getElementById("username");
    const passwordInput = document.getElementById("password");
    const loginBtn = document.getElementById("login-btn");
