@@ -7,3 +7,10 @@ dist/
 build/
 .vscode/
 .idea/
+
+# Environment Exclusions
+.agents/
+.project_history
+.gemini/
+*.ai
+
