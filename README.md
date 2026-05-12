@@ -25,3 +25,4 @@ This is a static web application and can be hosted on any standard web server, i
 ---
 *Developed by Rishikesan. Â© 2026.*
 
+
